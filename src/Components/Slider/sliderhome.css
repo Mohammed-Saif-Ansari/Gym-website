@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+
+
+.slide {
+    width: 100%; /* Adjust as needed */
+    height: 400px; /* Adjust slide height */
+    background-size: cover; /* Ensure background covers entire slide */
+    background-position: center; /* Center the background image */
+}
+
+.slide-1 {
+    background-image: url('../../assets/images/slide1.jpg'); /* Adjust the path */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-2 {
+    background-image: url('../../assets/images/slide2.jpg'); /* Adjust the path */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-3 {
+    background-image: url('../../assets/images/slide3.jpg'); /* Adjust the path */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-title h1 {
+    font-size: 82px;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.slide-para p {
+    font-size: 22px;
+    color: #b7b7b7;
+    margin-top: 15px;
+    text-align: start;
+}
+
+.slide-button button {
+    padding: 22px 60px 22px;
+    background-color: #b1b7b7;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+}
+
+.slide-content {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.slider-section1 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+/* Your existing styles */
+
+/* Your existing styles */
+
+/* Your existing styles */
+
+.slider-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .slider-buttons button {
+    padding: 10px 17px;
+    border-radius: 50%;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slider-buttons button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(177, 178, 178, 0.5); /* Set border properties for the animation */
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box; /* Make sure the border is included in the button's dimensions */
+  }
+  
+  .slider-buttons button:hover::after {
+    transform: scale(2);
+  }
+  
+
+  p {
+    text-align: center;
+  }
+  
+  .btn {
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+   transition: all 0.8s;
+    cursor: pointer;
+    /* -webkit-user-select: none; */
+  transition-timing-function: cubic-bezier(.4,.08,0,.97);
+  margin: 10px;
+  }
+  
+  .btn:hover {
+    background: rgba(0,0,0,0.4);
+    letter-spacing: 2px;
+  }
+  
+  .btn svg {
+    position: absolute;
+    left: 0; 
+    top: 0;
+  }
+  
+  .circle {
+    stroke-dasharray: 301.59px 301.59px;
+    stroke-dashoffset: 301.59px;
+    transition: all 0.8s;
+    transition-timing-function: cubic-bezier(.4,.08,0,.97);
+  }
+  
+  .btn:hover .circle {
+      stroke-dashoffset: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  .active {
+    display: block; /* Or any other display value you need */
+  }
+
+  .slider-section1 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-bundle {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Add a smooth transition */
+  }
+
+  .slider-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}

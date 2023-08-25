@@ -1,0 +1,75 @@
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navlogo img {
+    width: 5rem;
+}
+
+.nav-main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.2); /* Background color with opacity for glass effect */
+    backdrop-filter: blur(10px); /* Blur effect for the glass effect */
+    position: fixed;
+    z-index: 999;
+  }
+  
+
+ul.nav-links {
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-hidden-deatails {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+ul.nav-links a {
+    color: #b1b2b2;
+}
+
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0; /* Start with 0 width */
+    height: 3px;
+    background-color: black;
+    opacity: 0;
+    transition: width 0.3s, opacity 0.3s; /* Add width transition */
+}
+
+.nav-links li a:hover::after {
+    width: 100%; /* Increase width to 100% on hover */
+    opacity: 1;
+}
+
+ @media (max-width: 767px) {
+    ul.nav-links {
+        display: none;
+    }
+    .nav-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+}

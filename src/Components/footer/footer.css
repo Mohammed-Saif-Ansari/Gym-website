@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-main {
+    background-color: #252525;
+}
+
+.footer-main-up {
+    display: flex;
+    padding: 20px;
+}
+
+.first-para p {
+    color: #b1b2b2;
+    font-size: 16px;
+    text-align: start;
+}
+
+.first-contact p {
+    color: #b1b2b2;
+    margin-bottom: 14px;
+    text-align: start;
+}
+
+.first-para {
+    padding: 10px 0px;
+}
+
+.first-logo img {
+    width: 6rem;
+    display: flex;
+    margin: auto;
+}
+
+.footer-main-up-first {
+    width: 25%;
+    padding: 10px;
+}
+
+.second-data h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.latestnews-data h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.second-data h4 {
+    color: #b1b2b2;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.footer-main-up-latestnews {
+    width: 25%;
+    padding: 10px;
+}
+
+.footer-main-up-recentprojects h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.footer-main-up-recentprojects ul li a {
+    color: #b1b2b2;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.footer-main-up-recentprojects {
+    width: 25%;
+    padding: 10px;
+}
+
+.footer-main-up-contact {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-main-up-contact label {
+    color: #b1b2b2;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-main-up-contact input#name,
+input#email,
+textarea#comment {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.footer-main-up-contact button {
+    background-color: #b1b2b2;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.footer-main-up-recentprojects ul {
+    padding: 0;
+}
+
+.latestnews-data h4 {
+    color: #b1b2b2;
+    margin-bottom: 14px;
+}
+
+.footer-main-up-contact form {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Background color with opacity for glass effect */
+    backdrop-filter: blur(10px); /* Blur effect for the glass effect */
+}
+
+.footer-main-down {
+    background-color: #000000;
+    height: 10vh;
+}
+
+.footer-down-content p {
+    color: #b1b2b2;
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+.footer-down-content {
+    display: flex;
+    justify-content: center;
+}
+
+.first-contact {
+    padding: 10px 0px;
+}
+
+@media (max-width: 767px) {
+    .footer-main-up {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-main-up-first {
+        width: auto;
+    }
+
+    .footer-main-up-latestnews {
+        width: auto;
+    }
+
+    .footer-main-up-recentprojects {
+        width: auto;
+    }
+
+    .footer-main-up-contact {
+        width: auto;
+    }
+
+    .footer-main-up-contact input#name,
+    input#email,
+    textarea#comment {
+        width: -webkit-fill-available;
+    }
+}
